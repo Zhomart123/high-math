@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Your Learning Style</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Discover Your Learning Style</h1>
+      <p>Answer these fun questions to find out how you learn best!</p>
+    </header>
+
+    <form id="quiz-form">
+      <!-- Visual Questions -->
+      <div class="question" data-type="visual">
+        <p>1. When learning a new topic, what excites you most?</p>
+        <label><input type="radio" name="q1" value="1"> Watching a colorful video or infographic.</label>
+        <label><input type="radio" name="q1" value="0"> Hearing a detailed explanation.</label>
+      </div>
+      <div class="question" data-type="visual">
+        <p>2. Your perfect study material would include:</p>
+        <label><input type="radio" name="q2" value="1"> Lots of pictures and charts.</label>
+        <label><input type="radio" name="q2" value="0"> Clear written instructions.</label>
+      </div>
+      <div class="question" data-type="visual">
+        <p>3. You’re designing a project. What’s your focus?</p>
+        <label><input type="radio" name="q3" value="1"> Making it visually attractive.</label>
+        <label><input type="radio" name="q3" value="0"> Explaining ideas in detail.</label>
+      </div>
+      <div class="question" data-type="visual">
+        <p>4. How do you usually organize your notes?</p>
+        <label><input type="radio" name="q4" value="1"> With colors and diagrams.</label>
+        <label><input type="radio" name="q4" value="0"> In neat paragraphs or bullet points.</label>
+      </div>
+      <div class="question" data-type="visual">
+        <p>5. You’re learning about history. What helps you?</p>
+        <label><input type="radio" name="q5" value="1"> A timeline with pictures.</label>
+        <label><input type="radio" name="q5" value="0"> Reading a detailed article.</label>
+      </div>
+
+      <!-- Auditory Questions -->
+      <div class="question" data-type="auditory">
+        <p>6. During a class, what helps you the most?</p>
+        <label><input type="radio" name="q6" value="1"> A teacher explaining things out loud.</label>
+        <label><input type="radio" name="q6" value="0"> A handout to read on your own.</label>
+      </div>
+      <div class="question" data-type="auditory">
+        <p>7. You’re part of a study group. What do you do?</p>
+        <label><input type="radio" name="q7" value="1"> Lead a discussion or talk it out.</label>
+        <label><input type="radio" name="q7" value="0"> Take notes while others talk.</label>
+      </div>
+      <div class="question" data-type="auditory">
+        <p>8. How do you learn a new language best?</p>
+        <label><input type="radio" name="q8" value="1"> Listening to audio lessons.</label>
+        <label><input type="radio" name="q8" value="0"> Reading a textbook.</label>
+      </div>
+      <div class="question" data-type="auditory">
+        <p>9. What makes a class memorable for you?</p>
+        <label><input type="radio" name="q9" value="1"> The way the teacher explained concepts.</label>
+        <label><input type="radio" name="q9" value="0"> The activities or assignments.</label>
+      </div>
+      <div class="question" data-type="auditory">
+        <p>10. You’re learning a new skill. What helps most?</p>
+        <label><input type="radio" name="q10" value="1"> Watching a tutorial and hearing instructions.</label>
+        <label><input type="radio" name="q10" value="0"> Reading detailed steps in a manual.</label>
+      </div>
+
+      <!-- Read/Write Questions -->
+      <div class="question" data-type="readwrite">
+        <p>11. You need to study for an exam. What’s your plan?</p>
+        <label><input type="radio" name="q11" value="1"> Writing summaries or notes.</label>
+        <label><input type="radio" name="q11" value="0"> Watching videos about the topic.</label>
+      </div>
+      <div class="question" data-type="readwrite">
+        <p>12. What’s your favorite part of studying?</p>
+        <label><input type="radio" name="q12" value="1"> Highlighting or underlining notes.</label>
+        <label><input type="radio" name="q12" value="0"> Talking about the topic with others.</label>
+      </div>
+      <div class="question" data-type="readwrite">
+        <p>13. How do you like to learn about a new subject?</p>
+        <label><input type="radio" name="q13" value="1"> Reading books or articles.</label>
+        <label><input type="radio" name="q13" value="0"> Doing experiments or hands-on activities.</label>
+      </div>
+      <div class="question" data-type="readwrite">
+        <p>14. When revising, what do you enjoy?</p>
+        <label><input type="radio" name="q14" value="1"> Making lists or writing outlines.</label>
+        <label><input type="radio" name="q14" value="0"> Practicing with flashcards or visuals.</label>
+      </div>
+      <div class="question" data-type="readwrite">
+        <p>15. How do you process new information best?</p>
+        <label><input type="radio" name="q15" value="1"> Reading about it and taking notes.</label>
+        <label><input type="radio" name="q15" value="0"> Talking to someone who knows the subject.</label>
+      </div>
+
+      <!-- Kinesthetic Questions -->
+      <div class="question" data-type="kinesthetic">
+        <p>16. You’re learning a sport. What helps most?</p>
+        <label><input type="radio" name="q16" value="1"> Actually practicing it yourself.</label>
+        <label><input type="radio" name="q16" value="0"> Watching someone else demonstrate it.</label>
+      </div>
+      <div class="question" data-type="kinesthetic">
+        <p>17. You prefer to study by:</p>
+        <label><input type="radio" name="q17" value="1"> Solving problems or doing activities.</label>
+        <label><input type="radio" name="q17" value="0"> Reading or writing down information.</label>
+      </div>
+      <div class="question" data-type="kinesthetic">
+        <p>18. You’re learning about science. What’s fun?</p>
+        <label><input type="radio" name="q18" value="1"> Doing an experiment or building a model.</label>
+        <label><input type="radio" name="q18" value="0"> Watching a documentary or reading an article.</label>
+      </div>
+      <div class="question" data-type="kinesthetic">
+        <p>19. How do you like to understand a topic?</p>
+        <label><input type="radio" name="q19" value="1"> Trying it out step-by-step.</label>
+        <label><input type="radio" name="q19" value="0"> Reading about how it works.</label>
+      </div>
+      <div class="question" data-type="kinesthetic">
+        <p>20. What’s your ideal classroom activity?</p>
+        <label><input type="radio" name="q20" value="1"> Building something or working on a hands-on project.</label>
+        <label><input type="radio" name="q20" value="0"> Listening to a lecture or watching a presentation.</label>
+      </div>
+
+      <button type="submit">See My Results</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <h2>Your Learning Style:</h2>
+      <p id="result-text"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
